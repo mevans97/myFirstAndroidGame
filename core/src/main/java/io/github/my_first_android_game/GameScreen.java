@@ -41,7 +41,7 @@ public class GameScreen implements Screen {
         // load the ki blast sound effect and the ultra Instinct background "music"
         kiBlastSound = Gdx.audio.newSound(Gdx.files.internal("kiblast.mp3"));
         ultraInstinctMusic = Gdx.audio.newMusic(Gdx.files.internal("ultraInstinct.mp3"));
-        ultraInstinctMusic.setLooping(true);//Loops the music during gameplay
+        ultraInstinctMusic.isLooping();//Loops the music during gameplay
 
         //This camera makes sure that you are always viewing an area of our game world that is 800x480 units wide. Think of this as a virtual window into our world.
         camera = new OrthographicCamera();
